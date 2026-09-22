@@ -139,7 +139,7 @@ You can use this program to control the robot directly, but make sure the on-bor
 ./go2_ctrl --network eth0 # eth0 is the network interface name.
 ```
 
-### Sim2Sim/Sim2Real with Web Portal
+### Sim2Sim/Sim2Real with Web Portal (Tested for Go2 only)
 install websocketd using
 
 
