@@ -38,7 +38,7 @@ Currently supports Unitree **Go2**, **H1** and **G1-29dof** robots.
     ```
 - Download unitree robot description files
 
-  *Method 1: Using USD Files (already downloaded in this repo you may skip)*
+  *Method 1: Using USD Files*
   - Download unitree usd files from [unitree_model](https://huggingface.co/datasets/unitreerobotics/unitree_model/tree/main), keeping folder structure
     ```bash
     git clone https://huggingface.co/datasets/unitreerobotics/unitree_model
