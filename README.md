@@ -41,8 +41,9 @@ Currently supports Unitree **Go2**, **H1** and **G1-29dof** robots.
   ```
   wget https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-x64-1.22.0.tgz
   tar -xzf onnxruntime-linux-x64-1.22.0.tgz
+  ```
+  Download Robot description(USD or URDF) files
 
-```
   *Method 1: Using USD Files*
   - Download unitree usd files from [unitree_model](https://huggingface.co/datasets/unitreerobotics/unitree_model/tree/main), keeping folder structure
     ```bash
