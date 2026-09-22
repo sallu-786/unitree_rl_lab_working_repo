@@ -102,7 +102,7 @@ mkdir build && cd build
 cmake .. -DBUILD_EXAMPLES=OFF # Install on the /usr/local directory
 sudo make install
 # Compile the robot_controller
-cd unitree_rl_lab/deploy/robots/g1_29dof # or other robots
+cd unitree_rl_lab_working_repo/deploy/robots/g1_29dof # or other robots
 mkdir build && cd build
 cmake .. && make
 ```
@@ -124,8 +124,8 @@ cd unitree_mujoco/simulate/build
 ```
 
 ```bash
-cd unitree_rl_lab/deploy/robots/g1_29dof/build
-./g1_ctrl
+cd unitree_rl_lab_working_repo/deploy/robots/g1_29dof/build
+./go2_ctrl
 # 1. press [L2 + Up] to set the robot to stand up
 # 2. Click the mujoco window, and then press 8 to make the robot feet touch the ground.
 # 3. Press [R1 + X] to run the policy.
@@ -137,8 +137,32 @@ cd unitree_rl_lab/deploy/robots/g1_29dof/build
 You can use this program to control the robot directly, but make sure the on-borad control program has been closed.
 
 ```bash
-./g1_ctrl --network eth0 # eth0 is the network interface name.
+./go2_ctrl --network eth0 # eth0 is the network interface name.
 ```
+
+### Sim2Sim/Sim2Real with Web Portal
+install websocketd using
+
+
+```bash
+sudo apt install websocketd
+```
+If simulation run
+
+```bash
+# start simulation
+cd unitree_mujoco/simulate/build
+./unitree_mujoco
+# ./unitree_mujoco -i 0 -n eth0 -r g1 -s scene_29dof.xml # alternative
+```
+
+in another terminal run 
+```bash
+cd unitree_rl_lab_working_repo
+./web_portal.sh #make sure "NETWORK_IFACE" is correctly set in this script, use ip addr to find your interface used to connect to robot
+```
+For real robot you dont need to run ./unitree_mujoco just run ./web_portal.sh with correct network interface
+
 
 ## Acknowledgements
 
