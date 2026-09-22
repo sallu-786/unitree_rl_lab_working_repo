@@ -15,7 +15,7 @@ set -euo pipefail
 # reach as your real emergency stop.
 
 BIN="./deploy/robots/go2/build/go2_ctrl"
-NETWORK_IFACE="wlxb0c745c570e1"   # match what you'd normally pass as --network
+NETWORK_IFACE="eth0"   # match what you'd normally pass as --network
 WS_PORT=8888
 UI_PORT=8889
 UI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # folder this script lives in; adjust if index.html is elsewhere
