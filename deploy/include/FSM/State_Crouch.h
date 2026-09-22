@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Copyright (c) 2026, Muhamamd Suleman.
+=======
+// Copyright (c) 2025, Unitree Robotics Co., Ltd.
+>>>>>>> 62f077e934c9ed3be76221be7658a776d0978593
 // All rights reserved.
 
 #pragma once
