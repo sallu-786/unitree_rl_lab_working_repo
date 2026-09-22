@@ -27,7 +27,7 @@ Currently supports Unitree **Go2**, **H1** and **G1-29dof** robots.
   - Clone or copy this repository separately from the Isaac Lab installation (i.e. outside the `IsaacLab` directory):
 
     ```bash
-    git clone https://github.com/unitreerobotics/unitree_rl_lab.git
+    git clone https://github.com/unitreerobotics/unitree_rl_lab_working_repo.git
     ```
   - Use a python interpreter that has Isaac Lab installed, install the library in editable mode using:
 
@@ -49,7 +49,7 @@ Currently supports Unitree **Go2**, **H1** and **G1-29dof** robots.
     ```bash
     git clone https://huggingface.co/datasets/unitreerobotics/unitree_model
     ```
-  - Config `UNITREE_MODEL_DIR` in `source/unitree_rl_lab/unitree_rl_lab/assets/robots/unitree.py`.
+  - Config `UNITREE_MODEL_DIR` in `source/unitree_rl_lab_working_repo/unitree_rl_lab/assets/robots/unitree.py`.
 
     ```bash
     UNITREE_MODEL_DIR = "</home/user/projects/unitree_usd>"
@@ -60,7 +60,7 @@ Currently supports Unitree **Go2**, **H1** and **G1-29dof** robots.
       ```
       git clone https://github.com/unitreerobotics/unitree_ros.git
       ```
-  - Config `UNITREE_ROS_DIR` in `source/unitree_rl_lab/unitree_rl_lab/assets/robots/unitree.py`.
+  - Config `UNITREE_ROS_DIR` in `source/unitree_rl_lab_working_repo/unitree_rl_lab/assets/robots/unitree.py`.
     ```bash
     UNITREE_ROS_DIR = "</home/user/projects/unitree_ros/unitree_ros>"
     ```
