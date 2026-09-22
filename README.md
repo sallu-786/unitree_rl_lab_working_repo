@@ -36,8 +36,12 @@ Currently supports Unitree **Go2**, **H1** and **G1-29dof** robots.
     ./unitree_rl_lab.sh -i
     # restart your shell to activate the environment changes.
     ```
-- Download unitree robot description files
-
+- Download unitree robot description and missing Onnx files
+  ```
+  wget https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-x64-1.22.0.tgz
+  tar -xzf onnxruntime-linux-x64-1.22.0.tgz
+  #place the missing library files inside deploy/thirdparty/onnxruntime-linux-x64-1.22.0/lib/
+```
   *Method 1: Using USD Files*
   - Download unitree usd files from [unitree_model](https://huggingface.co/datasets/unitreerobotics/unitree_model/tree/main), keeping folder structure
     ```bash
