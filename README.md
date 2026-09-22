@@ -152,7 +152,6 @@ If simulation run
 # start simulation
 cd unitree_mujoco/simulate/build
 ./unitree_mujoco
-# ./unitree_mujoco -i 0 -n eth0 -r g1 -s scene_29dof.xml # alternative
 ```
 
 in another terminal run 
